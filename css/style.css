@@ -1,0 +1,60 @@
+/* global styles */
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("/fonts/NotoSans.ttf");
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --white: #fff;
+  --black: #111;
+  --blue: #5e81ac;
+  --dark-blue: #3b4252;
+  --light-blue: #eceff4;
+
+  color: var(--black);
+  background-color: var(--white);
+  font-family: "NotoSans";
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+input, button, select {
+  border: none;
+  outline: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  border-radius: .25em;
+  padding: .25em 1.25em;
+}
+
+/* font sizes */
+
+@media screen and (min-width: 480px) {
+  html { font-size: 1.1rem }
+}
+
+@media screen and (min-width: 768px) {
+  html { font-size: 1.2rem }
+}
+
+@media screen and (min-width: 1024px) {
+  html { font-size: 1.3rem }
+}
+
+@media screen and (min-width: 1200px) {
+  html { font-size: 1.4rem }
+}
+
