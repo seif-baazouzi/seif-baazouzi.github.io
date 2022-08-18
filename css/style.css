@@ -58,3 +58,78 @@ button {
   html { font-size: 1.4rem }
 }
 
+/* navbar styles */
+
+nav {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+nav .logo {
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .025em;
+  color: var(--blue);
+}
+
+nav .logo:hover {
+  color: var(--black);
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10rem; left: 0;
+}
+
+nav ul.open {
+  top: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: .6rem;
+  padding: .25rem;
+  font-weight: bold;
+  color: var(--black);
+}
+
+nav ul li a.active {
+  color: var(--blue);
+}
+
+.burger {
+  width: 1rem;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 100%;
+  height: .125rem;
+  margin: .1rem 0;
+  background-color: var(--black);
+  transition: .3s;
+}
+
+.burger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(.25rem, .125rem);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(.25rem, -.125rem);
+}
