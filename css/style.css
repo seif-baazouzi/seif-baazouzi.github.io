@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --white: #fff;
   --black: #070d18;
@@ -38,6 +42,12 @@ a {
 button {
   border-radius: .25em;
   padding: .25em 1.25em;
+}
+
+section {
+  width: 100%;
+  min-height: calc(100vh - 2.5rem);
+  padding: 1rem;
 }
 
 /* font sizes */
@@ -167,5 +177,46 @@ nav ul li a.active {
 
   #burger {
     display: none;
+  }
+}
+
+/* Home section */
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#home p {
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+
+#home svg {
+  width: 4.5rem;
+  padding: 1rem;
+  margin-top: 8rem;
+  fill: var(--black);
+  position: relative;
+  animation: arrow-anim 2s ease-out infinite;
+}
+
+@keyframes arrow-anim {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+
+  60% {
+    opacity: .25;
+    top: 1rem;
   }
 }
