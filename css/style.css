@@ -135,3 +135,16 @@ nav ul li a.active {
 #burger.open div:nth-child(3) {
   transform: rotate(-45deg) translate(.25rem, -.125rem);
 }
+
+@media screen and (min-width: 520px) {
+  nav ul {
+    width: fit-content;
+    position: relative;
+    top: 0;
+    background: none;
+  }
+
+  #burger {
+    display: none;
+  }
+}
