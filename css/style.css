@@ -88,6 +88,8 @@ nav ul {
   justify-content: center;
   position: absolute;
   top: -10rem; left: 0;
+  transition: top .3s ease-out;
+  background-color: var(--white);
 }
 
 nav ul.open {
@@ -109,12 +111,12 @@ nav ul li a.active {
   color: var(--blue);
 }
 
-.burger {
+#burger {
   width: 1rem;
   cursor: pointer;
 }
 
-.burger div {
+#burger div {
   width: 100%;
   height: .125rem;
   margin: .1rem 0;
@@ -122,14 +124,14 @@ nav ul li a.active {
   transition: .3s;
 }
 
-.burger.open div:nth-child(1) {
+#burger.open div:nth-child(1) {
   transform: rotate(45deg) translate(.25rem, .125rem);
 }
 
-.burger.open div:nth-child(2) {
+#burger.open div:nth-child(2) {
   opacity: 0;
 }
 
-.burger.open div:nth-child(3) {
+#burger.open div:nth-child(3) {
   transform: rotate(-45deg) translate(.25rem, -.125rem);
 }
