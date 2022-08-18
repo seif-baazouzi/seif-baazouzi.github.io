@@ -1,5 +1,6 @@
 const links = document.getElementById("links")
 const burger = document.getElementById("burger")
+const navbar = document.getElementById("navbar")
 
 burger.addEventListener("click", () => {
   links.classList.toggle("open")
@@ -7,8 +8,8 @@ burger.addEventListener("click", () => {
 })
 
 window.onhashchange = () => {
-  const links = document.querySelectorAll("#links a")
-  links.forEach(link => link.classList.remove("active"))
+  const linksList = document.querySelectorAll("#links a")
+  linksList.forEach(link => link.classList.remove("active"))
 
   const hash = document.location.hash
   let linkID = "home-link"
@@ -20,4 +21,12 @@ window.onhashchange = () => {
 
   links.classList.remove("open")
   burger.classList.remove("open")
+}
+
+window.onscroll = () => {
+  if(window.document.scrollingElement.scrollTop > 250) {
+    navbar.classList.add("active")
+  } else {
+    navbar.classList.remove("active")
+  }
 }

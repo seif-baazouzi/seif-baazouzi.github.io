@@ -13,8 +13,8 @@
 
 body {
   --white: #fff;
-  --black: #111;
-  --blue: #5e81ac;
+  --black: #070d18;
+  --blue: #4f4fed;
   --dark-blue: #3b4252;
   --light-blue: #eceff4;
 
@@ -64,10 +64,20 @@ nav {
   width: 100%;
   height: 2.5rem;
   padding: 0 1rem;
+  position: sticky;
+  top: 0; left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--white);
+}
+
+nav.active {
+  box-shadow: 0 .025rem .025rem rgba(0, 0, 0, .25);
+}
+
+nav a {
+  transition: color .3s ease-out;
 }
 
 nav .logo {
@@ -78,7 +88,7 @@ nav .logo {
 }
 
 nav .logo:hover {
-  color: var(--black);
+  color: var(--dark-blue);
 }
 
 nav ul {
@@ -104,7 +114,7 @@ nav ul li a {
   font-size: .6rem;
   padding: .25rem;
   font-weight: bold;
-  color: var(--black);
+  color: var(--dark-blue);
 }
 
 nav ul li a.active {
@@ -124,7 +134,18 @@ nav ul li a.active {
   transition: .3s;
 }
 
+#burger div:nth-child(1) {
+  width: 60%;
+  margin-left: auto;
+}
+
+#burger div:nth-child(2) {
+  width: 80%;
+  margin-left: auto;
+}
+
 #burger.open div:nth-child(1) {
+  width: 100%;
   transform: rotate(45deg) translate(.25rem, .125rem);
 }
 
