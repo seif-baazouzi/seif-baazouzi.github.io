@@ -220,3 +220,40 @@ nav ul li a.active {
     top: 1rem;
   }
 }
+
+/* about section */
+
+#about h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+#about p {
+  font-size: 1rem;
+  color: var(--dark-blue);
+  margin: .5rem 0;
+}
+
+#about .technologies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .technologies ul {
+  width: 100%;
+}
+
+#about .technologies li {
+  list-style: none;
+  font-size: .85rem;
+  color: var(--dark-blue);
+}
+
+#about .technologies li::before {
+  content: "-";
+  color: var(--black);
+  font-weight: bold;
+  padding: .25rem;
+}
