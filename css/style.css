@@ -301,6 +301,7 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 #contact h1 {
@@ -310,7 +311,7 @@ nav ul li a.active {
 #contact .email {
   font-size: 1.5rem;
   color: var(--dark-blue);
-  margin: 2rem 0;
+  margin: 3rem 0 10rem;
 
   display: flex;
   align-items: center;
@@ -321,4 +322,23 @@ nav ul li a.active {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 1rem;
+}
+
+#contact .links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3rem; left: 0;
+}
+
+#contact .links a {
+  padding: 1rem;
+  border-radius: .5rem;
+  transition: background .3s ease-out;
+}
+
+#contact .links a:hover {
+  background-color: var(--light-blue);
 }
