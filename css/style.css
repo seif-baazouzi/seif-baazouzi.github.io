@@ -325,6 +325,11 @@ nav ul li a.active {
   position: relative;
   border-radius: .5rem;
   background-color: var(--light-blue);
+  transition: all .3s ease-out;
+}
+
+#projects .card:hover {
+  transform: translateY(-0.5rem);
 }
 
 #projects .card .icon {
