@@ -294,6 +294,80 @@ nav ul li a.active {
   }
 }
 
+/* projects section */
+
+#projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+#projects h1 {
+  margin: 1rem 0;
+}
+
+#projects .cards {
+  display: grid;
+  gap: .75rem;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 520px) {
+  #projects .cards { grid-template-columns: 1fr 1fr } 
+}
+
+@media screen and (min-width: 968px) {
+  #projects .cards { grid-template-columns: 1fr 1fr 1fr } 
+}
+
+#projects .card {
+  padding: 1rem 1rem 2.5rem 1rem;
+  position: relative;
+  border-radius: .5rem;
+  background-color: var(--light-blue);
+}
+
+#projects .card .icon {
+  width: 1.5rem;
+  margin-bottom: .25rem;
+  fill: var(--blue);
+}
+
+#projects .card p {
+  margin-top: 1rem;
+  font-size: .75rem;
+  color: var(--dark-blue);
+}
+
+#projects .card .technologies {
+  width: 100%;
+  position: absolute;
+  bottom: 1rem;
+}
+
+#projects .card .technologies span {
+  opacity: .75;
+  font-size: .6rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+#projects .card .link {
+  position: absolute;
+  top: .5rem; right: 1rem;
+}
+
+#projects .card .link svg {
+  width: 1.25rem;
+  fill: var(--dark-blue);
+  transition: fill .3s ease-out;
+}
+
+#projects .card .link svg:hover {
+  fill: var(--blue);
+}
+
+
 /* contact section */
 
 #contact {
