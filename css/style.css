@@ -293,3 +293,32 @@ nav ul li a.active {
     transform: translateY(-2rem);
   }
 }
+
+/* contact section */
+
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#contact h1 {
+  font-size: 1rem;
+}
+
+#contact .email {
+  font-size: 1.5rem;
+  color: var(--dark-blue);
+  margin: 2rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact .email svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
