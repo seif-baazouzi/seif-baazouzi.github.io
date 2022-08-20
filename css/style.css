@@ -229,7 +229,7 @@ nav ul li a.active {
 
 #about h1 {
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   text-transform: uppercase;
 }
 
