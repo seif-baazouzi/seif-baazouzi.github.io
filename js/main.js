@@ -23,10 +23,45 @@ window.onhashchange = () => {
   burger.classList.remove("open")
 }
 
+const homeSection     = document.getElementById("home")
+const aboutSection    = document.getElementById("about")
+const projectsSection = document.getElementById("projects")
+const contactSection  = document.getElementById("contact")
+
+function getOffsetTop(el) {
+  let top = 0
+  while(el && !isNaN(el.offsetTop) ) {
+    top += el.offsetTop - el.scrollTop
+    el = el.offsetParent
+  }
+
+  return top
+}
+
+function getActiveSection() {
+  const padding = 100
+  const scroll = window.document.scrollingElement.scrollTop
+
+  const linksList = document.querySelectorAll("#links a")
+  linksList.forEach(link => link.classList.remove("active"))
+  
+  if(scroll >= getOffsetTop(contactSection)-padding) {
+    document.getElementById("contact-link").classList.add("active")
+  } else if(scroll >= getOffsetTop(projectsSection)-padding) {
+    document.getElementById("projects-link").classList.add("active")
+  } else if(scroll >= getOffsetTop(aboutSection)-padding) {
+    document.getElementById("about-link").classList.add("active")
+  } else {
+    document.getElementById("home-link").classList.add("active")
+  }
+}
+
 window.onscroll = () => {
   if(window.document.scrollingElement.scrollTop > 250) {
     navbar.classList.add("active")
   } else {
     navbar.classList.remove("active")
   }
+
+  getActiveSection()
 }
