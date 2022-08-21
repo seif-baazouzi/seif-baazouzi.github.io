@@ -7,6 +7,8 @@ const aboutSection    = document.getElementById("about")
 const projectsSection = document.getElementById("projects")
 const contactSection  = document.getElementById("contact")
 
+const darkModeSwitcher = document.getElementById("dark-mode-switcher")
+
 function setActiveLink(linkID) {
   const linksList = document.querySelectorAll("#links a")
   linksList.forEach(link => link.classList.remove("active"))
@@ -76,3 +78,25 @@ window.onscroll = () => {
 
 // set the init active link
 setActiveSectionLink()
+
+// switch dark mode
+darkModeSwitcher.addEventListener("click", () => {
+  const mode = localStorage.getItem("mode") || "light"
+
+  if(mode === "light") {
+    document.body.classList.add("dark")
+    localStorage.setItem("mode", "dark")
+  } else {
+    document.body.classList.remove("dark")
+    localStorage.setItem("mode", "light")
+  }
+})
+
+// set the init mode
+const mode = localStorage.getItem("mode") || "light"
+
+if(mode === "light") {
+  document.body.classList.remove("dark")
+} else {
+  document.body.classList.add("dark")
+}

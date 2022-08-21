@@ -27,6 +27,15 @@ body {
   font-family: "NotoSans";
   overflow-x: hidden;
   overflow-y: auto;
+  transition: all .1s ease-out;
+}
+
+body.dark {
+  --white: #2E3440;
+  --black: #fff;
+  --blue: #5E81AC;
+  --dark-blue: #eceff4;
+  --light-blue: #3b4252;
 }
 
 input, button, select {
@@ -102,6 +111,18 @@ nav .logo:hover {
   color: var(--dark-blue);
 }
 
+nav .left-side {
+  display: flex;
+  align-items: center;
+}
+
+nav #dark-mode-switcher {
+  width: 2rem;
+  padding: .5rem;
+  fill: var(--dark-blue);
+  cursor: pointer;
+}
+
 nav ul {
   width: 100%;
   display: flex;
@@ -169,6 +190,10 @@ nav ul li a.active {
 }
 
 @media screen and (min-width: 520px) {
+  nav #dark-mode-switcher {
+    transform: translateY(.125rem);
+  }
+
   nav ul {
     width: fit-content;
     position: relative;
