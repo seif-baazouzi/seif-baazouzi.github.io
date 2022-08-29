@@ -189,6 +189,15 @@ nav ul li a.active {
   transform: rotate(-45deg) translate(.25rem, -.125rem);
 }
 
+#navbar .lang {
+  padding: .25em;
+  color: var(--dark-blue);
+  font-size: .75rem;
+  font-weight: bold;
+  margin-right: .5rem;
+  margin-bottom: .25em;
+}
+
 @media screen and (min-width: 520px) {
   nav #dark-mode-switcher {
     transform: translateY(.125rem);
@@ -203,6 +212,11 @@ nav ul li a.active {
 
   #burger {
     display: none;
+  }
+
+  #navbar .lang {
+    margin-top: .25em;
+    margin-bottom: 0;
   }
 }
 

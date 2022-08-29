@@ -9,25 +9,25 @@
   <meta name="description" content="This is seif Baazouzi portfolio website" />
   <meta name="keywords" content="front-end, back-end, web development, full-stack, node.js, express, html, css, javaScript, mongodb, postgresql, golang, flask, next, react, svelte, portfolio">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/arabic.css">
   <title>Seif Baazouzi Portfolio</title>
   <script src="/js/main.js" defer></script>
 </head>
 <body>
   <nav id="navbar">
-    <a href="#" class="logo">SeifBaazouzi</a>
+    <a href="#" class="logo">سيف بعزوزي</a>
 
     <div class="left-side">
+      <a href="/" class="lang">en</a>
+      <svg id="dark-mode-switcher" viewbox="0 0 24 24"><use href="#moon" /></svg>
+
       <ul id="links">
-        <li><a id="home-link" href="#" class="active">Home</a></li>
-        <li><a id="about-link" href="#about">About</a></li>
-        <li><a id="projects-link" href="#projects">Projects</a></li>
-        <li><a id="contact-link" href="#contact">Contact</a></li>
+        <li><a id="home-link" href="#" class="active">الرائسية</a></li>
+        <li><a id="about-link" href="#about">نبذة عني</a></li>
+        <li><a id="projects-link" href="#projects">المشاريع</a></li>
+        <li><a id="contact-link" href="#contact">اتصل بي</a></li>
       </ul>
       
-      <svg id="dark-mode-switcher" viewbox="0 0 24 24"><use href="#moon" /></svg>
-      
-      <a href="/ar.html" class="lang">ar</a>
-
       <div id="burger">
         <div></div>
         <div></div>
@@ -37,20 +37,20 @@
   </nav>
 
   <section id="home">
-    <h1>Hello, I'm Seif Baazouzi</h1>
-    <p>I'm a full stack web developer.</p>
+    <h1>السلام عليكم، انا سيف بعزوزي</h1>
+    <p>أنا مطور ويب</p>
     <a href="#about">
       <svg viewBox="0 0 24 24"><path d="M12 15a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 12.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 15z"/></svg>
     </a>
   </section>
 
   <section id="about">
-    <h1>About</h1>
+    <h1>نبذة عني</h1>
     <div class="content">
       <div>
-        <p>What can a “full-stack web developer” do, you ask?</p>
-        <p>I can develope a website from nothing into existence, fully formed.</p>
-        <p>Here are a few technologies I've been working with recently:</p>
+        <p>ما الذي يمكن أن يفعله "مطور الويب" ، كما تسأل؟</p>
+        <p>يمكنني تطوير موقع ويب من لا شيء إلى الوجود ، مكتمل التكوين.</p>
+        <p> :فيما يلي بعض التقنيات التي كنت أعمل معها مؤخرا</p>
         <div class="technologies">
           <ul>
             <li>JavaScript</li>
@@ -71,12 +71,12 @@
   </section>
 
   <section id="projects">
-    <h1>Recent Projects</h1>
+    <h1>أحدث المشاريع</h1>
     <div class="cards">
       <div class="card">
         <svg class="icon" viewbox="0 0 68 62"><use href="#project" /></svg>
-        <h3>E-shop</h3>
-        <p>This is a website for e-shop stores, were the user can create his own shops and managed.</p>
+        <h3>متجر الكتروني</h3>
+        <p>هذا موقع إلكتروني لمتاجر المتاجر الإلكترونية ، حيث كان بإمكان المستخدم إنشاء متاجره الخاصة وإدارتها.</p>
         <div class="technologies">
           <span>Vue</span>
           <span>Golang</span>
@@ -90,8 +90,8 @@
 
       <div class="card">
         <svg class="icon" viewbox="0 0 68 62"><use href="#project" /></svg>
-        <h3>SEO Dashboard</h3>
-        <p>This is an eshop seo dashboard for my eshop project.</p>
+        <h3>لوحة تحكم كبار المسئولين </h3>
+        <p>هذا هو لوحة تحكم سيو للمتجر الإلكتروني لمشروع التسوق الإلكتروني الخاص بي.</p>
         <div class="technologies">
           <span>Flask</span>
           <span>MongoDB</span>
@@ -103,8 +103,8 @@
 
       <div class="card">
         <svg class="icon" viewbox="0 0 68 62"><use href="#project" /></svg>
-        <h3>Statistics</h3>
-        <p>This is a website where the user can create an account and add collections were each collection has logs and getting weekly, monthly and yearly statistics from the logs.</p>
+        <h3>الاحصاءات</h3>
+        <p>هذا موقع ويب حيث يمكن للمستخدم إنشاء حساب وإضافة مجموعات كانت كل مجموعة لديها سجلات والحصول على إحصائيات أسبوعية وشهرية وسنوية من السجلات.</p>
         <div class="technologies">
           <span>Nuxt</span>
           <span>Node.js</span>
@@ -118,8 +118,8 @@
 
       <div class="card">
         <svg class="icon" viewbox="0 0 68 62"><use href="#project" /></svg>
-        <h3>Tic Tac Toe Game</h3>
-        <p>This is an online multiplayer tic tac toe game.</p>
+        <h3>لعبة تيك تاك تو </h3>
+        <p>هذه هي لعبة تيك تاك تو متعددة اللاعبين على الانترنت.</p>
         <div class="technologies">
           <span>Node.js</span>
           <span>Express</span>
@@ -133,7 +133,7 @@
   </section>
 
   <section id="contact">
-    <h1>Got a Project? Lets Talk!</h1>
+    <h1> !هل لديك مشروع؟ دعنا نتحدث</h1>
     <a href="mailto:baazouziseif9@gmail.com" class="email">
       <svg viewbox="0 0 70 70">
         <use href="#mail" />

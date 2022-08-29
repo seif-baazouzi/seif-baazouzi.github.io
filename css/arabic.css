@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "NotoKufiArabic";
+  src: url("/fonts/NotoKufiArabic.ttf");
+}
+
+* {
+  text-align: right;
+  font-family: "NotoSans", "NotoKufiArabic";
+}
+
+#navbar, #links, #about .content {
+  flex-direction: row-reverse;
+}
+
+#navbar .lang {
+  margin-right: 0;
+}
+
+#about .technologies li::before {
+  display: none;
+}
+
+#about .technologies li::after {
+  content: "-";
+  color: var(--black);
+  font-weight: bold;
+  padding: .25rem;
+}
+
+#projects .card .link {
+  width: fit-content;
+  left: 1rem;
+}
+
+#projects .card .technologies {
+  left: 1rem;
+  text-align: left;
+}
